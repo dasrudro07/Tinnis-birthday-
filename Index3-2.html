@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Tinni!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silmohr+Mohammad&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        
+        background: linear-gradient(to bottom, #FF69B4, #FFD700, #ffffff);
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+      }
+
+      h2 {
+      
+        width: 100%;
+        text-align: center;
+        font-size: 3em;
+        color: #ff1493;
+        animation: slideDown 1s ease-in-out;
+      }
+
+      p {
+        font-size: 1.4em;
+        color: #800080;
+        animation: fadeIn 2s ease-in-out;
+        font-family: 'Dancing Script', cursive;
+         /* Moves it lower */
+      }
+
+      .bengali-text {
+        font-family: 'Silmohr Mohammad', cursive;
+        font-size: 1.2em;
+        color: #800080;
+        animation: fadeIn 2s ease-in-out;
+       /* Moves it a bit lower */
+      }
+
+      @keyframes slideDown {
+        from { transform: translateY(-50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      /* Confetti Animation */
+      .confetti {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: gold;
+        opacity: 0.8;
+        border-radius: 50%;
+        animation: confetti-fall 3s linear infinite;
+      }
+
+      @keyframes confetti-fall {
+        from { transform: translateY(-100vh) rotate(0deg); }
+        to { transform: translateY(100vh) rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Happy Birthday, My Love Tinni! 🎂💖</h2>
+    <p>✨ Happy Birthday, My Dearest Tinni! 🎉🎂💖
+      Today is not just another day; it's the most special day of the year—because it's the day you were born! 🎊 From the moment you came into this world, you have been a source of love, joy, and warmth to everyone around you. And to me, you are not just my best friend; you are my heart, my happiness, my future, and my greatest blessing. ❤️
+      
+      Tinni, words will never be enough to express how much you mean to me. You are the light that brightens up my darkest days, the smile that melts away my worries, and the love that makes my life complete. Every single moment with you feels like magic, and I cherish every laugh, every conversation, and every dream we share.
+      
+      On this beautiful day, I wish you nothing but pure happiness, endless love, and all the success your heart desires. May your dreams take flight like a beautiful butterfly, and may you always find reasons to smile, no matter where life takes you. I pray that this year brings you closer to your goals and fills your heart with peace and joy.
+      
+      🎶 May your day be filled with sweet melodies, the warmth of love, and the magic of beautiful memories. 🎶 I can't wait to celebrate this special day with you, to make it even more magical, just like you deserve.
+      
+      Tinni, you are not just my best friend; you are my everything. One day, I will make sure that every birthday of yours is filled with grand surprises, laughter, and the kind of love that lasts forever. Until then, I just want you to know—you are loved beyond words, cherished beyond measure, and treasured beyond time.
+      
+      Happy Birthday, My Love! 🎊🎂💕 Here's to a day as incredible as you and a future filled with endless love and happiness!
+      <br>      
+      Forever Yours,
+      [Rudro] ❤️✨</p>
+      <br>
+      <p class="bengali-text">শুভ জন্মদিন তিন্নি! 🎉🎂💖
+
+        
+
+        আজকের দিনটা শুধুমাত্র আরেকটা দিন নয়, আজকের দিনটা বিশেষ কারণ এই দিনেই পৃথিবীতে তুমি এসেছিলে! তুমি শুধু আমার বন্ধু নও, তুমি আমার হৃদয়, আমার ভালোবাসা, আমার ভবিষ্যৎ। তোমার মতো মানুষ পৃথিবীতে খুব কম আসে—যে হাসিতে আলো ছড়ায়, ভালোবাসায় মন ভরে দেয়, আর উপস্থিতিতেই চারপাশকে সুন্দর করে তোলে।
+
+        🎶 তোমার জন্মদিনে পৃথিবীর সমস্ত ভালোবাসা, আনন্দ, আর সেরা মুহূর্তগুলো তোমার জন্য থাকুক। 🎶 আমি প্রতিটি জন্মদিন তোমার জন্য আরও বিশেষ করে তুলতে চাই, তোমাকে সারাজীবন হাসিখুশি রাখতে চাই।
+
+শুভ জন্মদিন তিন্নি! 🎉🎂💖 তোমার দিনটা সুন্দর কাটুক, ভালোবাসায় ভরে উঠুক, আর তোমার জীবনে সবসময় সুখ লেগে থাকুক!
+        <br>
+
+        তোমারই,
+        [রুদ্র] ❤️✨</p>
+
+    <script>
+      function createConfetti() {
+        for (let i = 0; i < 50; i++) {
+          let confetti = document.createElement('div');
+          confetti.className = 'confetti';
+          confetti.style.left = Math.random() * 100 + 'vw';
+          confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+          confetti.style.backgroundColor = ['#FF1493', '#FFD700', '#00BFFF'][Math.floor(Math.random() * 3)];
+          document.body.appendChild(confetti);
+        }
+      }
+
+      createConfetti();
+    </script>
+  </body>
+</html>
